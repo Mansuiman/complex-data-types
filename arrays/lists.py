@@ -7,7 +7,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newList = None
+newList = [ "4" ]
 
 ########################################################################
 
@@ -31,7 +31,8 @@ appendElement = "ok?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-listCopy = None
+listCopy = list1[:]
+listCopy.append("ok?")
 
 ########################################################################
 
@@ -54,9 +55,10 @@ cycleMe = list(range(1, random.randint(5, 15)))
 cycleMeCopy = list(cycleMe)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
-
-
+firstelem = cycleMe.pop(0)
+cycleMe.append(firstelem)
+secondelem = cycleMe.pop(0)
+cycleMe.append(secondelem)
 ########################################################################
 
 
@@ -74,7 +76,7 @@ keepMe = clearJustMe
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearJustMe  = []
 
 ########################################################################
 
@@ -93,7 +95,7 @@ loseMe = clearAll
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearAll.clear()
 
 ########################################################################
 
@@ -110,8 +112,8 @@ allScores = [ random.randint(0, 100), random.randint(0, 100), random.randint(0, 
 allScoresCopy = list(allScores)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
-top3Scores = None
+sort1 = sorted(allScores, reverse=True)
+top3Scores = sort1[:3]
 
 ########################################################################
 
